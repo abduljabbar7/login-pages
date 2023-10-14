@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+  <script src="javascript/jscript1.js"></script>
+  <title>regestration form</title>
+</head>
+<body>
+  <div class="container">  
+  <h1>HTML registration form with varification</h1>
+
+  <form name="registration" class="registartion-form" onsubmit="return validateForm()" action="actions/register.php" method="post">
+    <table>
+       <tr>
+        <td><label for="role">Role</label></td>
+        <td>
+          <select name="role" id="role" required>
+            <option value="">Select Your Role - - - - - -</option>
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="name" >Name:</label></td>
+        <td><input class="form-control" type="text" name="name" id="name" placeholder="your name" required></td>
+        <span class="lighting"></span>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" name="email" id="email" placeholder="your email" required></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" class=" form-control input-md" name="password" id="password" required></td>
+      </tr>
+      <tr>
+        <td><label for="password"> Confirm Password:</label></td>
+        <td><input type="password" class=" form-control input-md" name="cpassword" id=" cpassword" required></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="number" id="phoneNumber" required></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td><input type="radio" name="gender" value="male" required>Male:
+          <input type="radio" name="gender" value="female" required>Female: 
+          <input type="radio" name="gender" value="other" required>other:</td>
+      </tr>
+      <tr>
+        <td><label for="zipcode">Zip Code:</label></td>
+        <td><input type="zipcode" name="zipcode" id="zipcode" required></td>
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about yourself..." required></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="1"> <input type="submit" class="submit" name="register" value="Register" />
+          
+         </td>
+      </tr>
+    </table>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./CSS/index.css">
+
+</head>
+<body  style="background-color: lightblue;">
+<!-- partial:index.partial.html -->
+<div class=" text-center" style="text-decoration-color: skyblue;">
+  
+</div>
+<div class="wrapper" >
+
+  <div class="inner-warpper text-center">
+    <h2 class="title">QUEST Admission Portal 2023</h2>
+    <form action="actions/login.php" id="formvalidate" method="post">
+      <div class="input-group">
+          <select name="role" id="role" required>
+            <option value="">Select Your Role--</option>
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+            <span class="lighting"></span>
+          </select>
+       
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userEmail" >User Email</label>
+        <input class="form-control" name="userEmail" id="userEmail" type="email" placeholder="" required />
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">Password</label>
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" required />
+        <span class="lighting"></span>
+      </div>
+
+      <button type="submit" id="login" name="login">Login</button>
+      <div class="clearfix supporter">
+        <div class="pull-left remember-me">
+          <input id="rememberMe" type="checkbox">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <a class="forgot pull-right" href="forgot.php">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="register.html">Don't have an accout? <span class="text-primary">Create One</span></a>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./javascript/jscript.js"></script>
+
+</body>
+</html>
